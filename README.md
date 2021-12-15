@@ -13,3 +13,13 @@ Para verificar se o repositório Local foi criado use:
 ~~~
 git status
 ~~~
+
+Adicionando repositório remoto ao repositório local
+~~~
+git remote add origin https://github.com/Henderson-dev/DIO-Bootcamp_Frontend_Developer.git
+~~~
+
+Baixando arquivos do repositório online com o repositório local
+~~~
+git pull origin main
+~~~

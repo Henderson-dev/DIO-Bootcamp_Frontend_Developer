@@ -23,3 +23,13 @@ Baixando arquivos do repositório online com o repositório local
 ~~~
 git pull origin main
 ~~~
+
+## Subindo arquivos locais para a branch main no respositório online
+
+Adicionando os arquivos modificados ao stage
+~~~
+git add *
+~~~
+~~~
+git add .
+~~~

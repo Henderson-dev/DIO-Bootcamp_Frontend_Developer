@@ -2,6 +2,14 @@
 
 Este respositório é destinado para publicação de estudos, desafios e tarefas do Bootcamp Inter Frontend Developer
 
+## Primeira configuração do repositório local
+~~~
+git config --global user.name "Henderson-dev"
+~~~
+~~~
+git config --global user.email teconet.arte@gmail.com
+~~~
+
 ## Ligando o repositório remoto ao repositório local
 
 Para iniciar um respositório local use o terminal do Git Bash, dentro de uma pasta de trabalho digite:
@@ -32,4 +40,14 @@ git add *
 ~~~
 ~~~
 git add .
+~~~
+
+Adicionando Commit aos arquivos modificados
+~~~
+git commit -m "Comentário do commit"
+~~~
+
+Fazendo o Push, empurando os arquivos do repositório local para o respositório remoto
+~~~
+git push -u origin master
 ~~~

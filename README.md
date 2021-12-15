@@ -5,7 +5,7 @@ Este respositório é destinado para publicação de estudos, desafios e tarefas
 ## Ligando o repositório remoto ao repositório local
 
 Para iniciar um respositório local use o terminal do Git Bash, dentro de uma pasta de trabalho digite:
-git init 
+ˋˋˋgit init
 
 Para verificar se o repositório Local foi criado use:
-git status
+ˋˋˋgit status

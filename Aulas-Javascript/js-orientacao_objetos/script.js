@@ -4,7 +4,7 @@ class ContaBancaria{
         this.agencia = agencia;
         this.numero = numero;
         this.tipo = tipo;
-        this._saldo = saldo;
+        this._saldo = 0;
     }
 
     // metodo Get 
@@ -40,8 +40,8 @@ class ContaBancaria{
 // Classe que cria uma conta corrente filha da classe de conta bancária. A classe filha herda as propiadades da classe pai
 class ContaCorrente extends ContaBancaria {
 
-    constructor(agencia, numero, saldo, cartaoCredito){
-        super(agencia, numero, saldo);
+    constructor(agencia, numero, cartaoCredito){
+        super(agencia, numero);
             this.tipo = 'corrente';
             this._cartaoCredito = cartaoCredito;
     }
@@ -60,8 +60,8 @@ class ContaCorrente extends ContaBancaria {
 
 // Classe filha de conta bancária. A classe filha herda as propiadades da classe pai
 class ContaPoupanca extends ContaBancaria {
-    constructor(agencia, numero, saldo){
-        super(agencia, numero, saldo);
+    constructor(agencia, numero){
+        super(agencia, numero);
             this.tipo = 'Poupanca';
     }
 }
@@ -69,8 +69,8 @@ class ContaPoupanca extends ContaBancaria {
 
 // Classe filha de conta bancária. A classe filha herda as propiadades da classe pai
 class ContaUniversitaria extends ContaBancaria{
-    constructor(agencia, numero, saldo){
-        super(agencia, numero, saldo);
+    constructor(agencia, numero){
+        super(agencia, numero);
             this.tipo = 'Universitária';
     }
 

@@ -112,3 +112,9 @@ header nav a:hover {
 .featured-film .wrap-buttons {
   margin-top: 60px;
 }
+
+.carroucel-films .box-film {
+  height: 100%;
+  width: 100%;
+  display: block;
+}

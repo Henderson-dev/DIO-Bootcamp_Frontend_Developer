@@ -25,6 +25,23 @@ body {
 
 button {
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: var(--white);
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+button svg {
+  margin-right: 8px;
 }
 
 header .container {
@@ -82,9 +99,12 @@ header nav a:hover {
           align-items: flex-start;
 }
 .featured-film h3 {
+  margin-top: 15%;
   font-size: 4rem;
   text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 10px;
 }
 .featured-film .wrap-buttons {
-  margin-top: 40px;
+  margin-top: 60px;
 }

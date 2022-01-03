@@ -10,4 +10,20 @@ body{
 }
 button{
     text-transform: uppercase;
+    background-color: rgba(0,0,0,.50);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: var(--white);
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    transition: .3s ease all;
+    cursor: pointer;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    svg{
+        margin-right: 8px;
+    }
 }

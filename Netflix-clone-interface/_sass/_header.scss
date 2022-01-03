@@ -1,0 +1,14 @@
+header{
+    .brand{
+        color: var(--red);
+        font-family: 'Arial Black', Times;
+        font-size: 4.0rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}

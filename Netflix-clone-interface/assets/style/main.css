@@ -58,7 +58,7 @@ header .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 5px 10px;
+  padding: 10px 20px;
 }
 header .brand {
   color: var(--red);
@@ -83,7 +83,7 @@ header nav a:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url("../../assets/images/house_of_cards_featured_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 45vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,6 +97,10 @@ header nav a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.featured-film .container {
+  padding: 15px 20px;
+  width: 60%;
 }
 .featured-film h3 {
   margin-top: 15%;

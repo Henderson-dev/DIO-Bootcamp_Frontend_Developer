@@ -1,14 +1,27 @@
 header{
-    .brand{
-        color: var(--red);
-        font-family: 'Arial Black', Times;
-        font-size: 4.0rem;
-    }
     .container{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 5px 10px;
+    }      
+    .brand{
+        color: var(--red);
+        font-family: 'Arial Black', Times;
+        font-size: 4.0rem;
+    }
+    nav{
+        a{
+            text-decoration: none;
+            color: var(--gray);
+            margin-right: 10px;
+            font-size: 1.6rem;
+            transition: all .2s ease-in-out;
+            &:hover{
+                color: var(--white);
+            }
+        }
     }
 
 }

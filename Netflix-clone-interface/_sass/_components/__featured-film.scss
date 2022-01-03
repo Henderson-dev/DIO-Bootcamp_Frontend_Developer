@@ -1,0 +1,18 @@
+.featured-film{
+    font-size: 1.6rem;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../../assets/images/house_of_cards_featured_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h3{
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+    .wrap-buttons{
+        margin-top: 40px;
+    }
+}

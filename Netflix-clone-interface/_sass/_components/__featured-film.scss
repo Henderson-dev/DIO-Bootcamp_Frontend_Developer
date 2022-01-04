@@ -1,16 +1,17 @@
 .featured-film{
     font-size: 1.6rem;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../../assets/images/house_of_cards_featured_image.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../../assets/images/house_of_cards_featured_image_mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45vh;
+    background-position: right top;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     .container{
         padding: 15px 20px;
-        width: 60%;
+        width: 70%;
     }
     h3{
         margin-top: 15%;
@@ -20,6 +21,22 @@
         margin-bottom: 10px;
     }
     .wrap-buttons{
-        margin-top: 60px;
+        margin-top: 30px;
     }
 }
+
+
+@media (min-width: 992px) {
+    .featured-film{
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../../assets/images/house_of_cards_featured_image.jpg');
+        background-position: right top;
+        height: 45vh;
+        .container{
+            width: 60%;
+        }
+        .wrap-buttons{
+            margin-top: 60px;
+        }        
+    }    
+}
+// 992px

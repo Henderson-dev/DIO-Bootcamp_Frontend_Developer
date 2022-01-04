@@ -12,16 +12,29 @@ header{
         font-size: 4.0rem;
     }
     nav{
-        a{
-            text-decoration: none;
-            color: var(--gray);
-            margin-right: 10px;
-            font-size: 1.6rem;
-            transition: all .2s ease-in-out;
-            &:hover{
-                color: var(--white);
-            }
-        }
+        display: none;
     }
 
 }
+
+
+@media (min-width: 576px) {
+    header{
+        nav{
+            display: block;
+            a{
+                text-decoration: none;
+                color: var(--gray);
+                margin-right: 10px;
+                font-size: 1.6rem;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    color: var(--white);
+                }
+            }
+        }
+    
+    }
+    
+}
+// 576px

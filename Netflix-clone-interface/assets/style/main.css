@@ -58,6 +58,8 @@ button svg {
 }
 header {
   background-color: var(--black);
+  position: relative;
+  z-index: 1;
 }
 header .container {
   display: -webkit-box;
@@ -100,6 +102,10 @@ header nav {
     color: var(--white);
   }
 }
+#video-intro {
+  display: none;
+}
+
 .featured-film {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -109,7 +115,7 @@ header nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
-  height: 55vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,28 +129,50 @@ header nav {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: relative;
 }
 .featured-film .container {
-  padding: 15px 20px;
+  position: relative;
+  padding: 0 20px;
   width: 70%;
+  z-index: 2;
 }
 .featured-film h3 {
-  margin-top: 15%;
+  margin-top: 0;
   font-size: 4rem;
   text-transform: uppercase;
   font-family: "Fira Sans", sans-serif;
   line-height: 4.6rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .featured-film .wrap-buttons {
   margin-top: 30px;
 }
 
 @media (min-width: 992px) {
+  #video-intro {
+    display: block;
+    height: 130%;
+    width: 100%;
+    position: absolute;
+    top: -75px;
+    left: 0;
+    background: transparent;
+  }
+  #video-intro .video-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, black));
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 70%);
+    opacity: 0.9;
+  }
+
   .featured-film {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(90%, black)), url("../../assets/images/house_of_cards_featured_image.jpg");
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, black 90%), url("../../assets/images/house_of_cards_featured_image.jpg");
+    background: url("../../assets/images/house_of_cards_featured_image.jpg");
     background-position: right top;
     height: 70vh;
   }
@@ -152,11 +180,11 @@ header nav {
     width: 40%;
   }
   .featured-film .wrap-buttons {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 .first-carroucel {
-  margin-top: -100px;
+  margin-top: -50px;
 }
 
 .carroucel-films {
@@ -167,7 +195,7 @@ header nav {
   position: absolute;
   right: 0;
   top: 0;
-  width: 140px;
+  width: 120px;
   height: 90%;
   background: -webkit-gradient(linear, right top, left top, color-stop(2%, black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(270deg, black 2%, rgba(0, 0, 0, 0) 100%);
@@ -223,4 +251,15 @@ header nav {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+@media (min-width: 768px) {
+  .first-carroucel {
+    margin-top: -100px;
+  }
+}
+@media screen and (max-height: 768px) and (min-width: 1366px) {
+  .first-carroucel {
+    margin-top: -50px;
+  }
 }

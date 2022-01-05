@@ -17,3 +17,16 @@ $('.owl-carousel').owlCarousel({
 
 // Add call for Owl carousel
 // documentation: https://owlcarousel2.github.io/OwlCarousel2/
+
+
+jQuery(function($){
+    // Video Background Destaque Home
+    var myPlayer;
+    jQuery(function(){
+        var options = {
+            mobileFallbackImage: '',
+            playOnlyIfVisible: false
+        };
+        myPlayer = jQuery('.video-intro').YTPlayer(options); 
+    });
+});    

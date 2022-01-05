@@ -13,6 +13,8 @@
     <!-- Add styles for Owl carousel -->
     <link rel="stylesheet" href="assets/style/owl/owl.carousel.min.css"> 
     <link rel="stylesheet" href="assets/style/owl/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="assets/style/ytbplayer/jquery.mb.YTPlayer.min.css"> 
+    
     <title>Netflix Clone Interface</title>     
 </head>
 <body>
@@ -28,17 +30,32 @@
         </div>
     </header>
     <main>
-        <!-- https://www.themoviedb.org/tv/1425-house-of-cards/images/backdrops -->
+
+
         <div class="featured-film">
+
+            <!-- Load video in background -->
+            <div id="video-intro">
+                <div class="video-shadow"></div>
+            </div>
+        
+            <div class="video-intro" data-property="{videoURL:'https://www.youtube.com/watch?v=BZAcNz7ECU0', containment:'#video-intro', useOnMobile:false, showControls:false,autoPlay:true, mute:false, loop:true, startAt:13, stopAt:56, opacity:1, addRaster:false, showYTLogo:false, quality:'hd720'}">
+            </div>
+            <!-- // Load video in background -->
+
+            <!--
+                Contents of movie: 
+                https://www.themoviedb.org/tv/1425-house-of-cards/images/backdrops 
+            -->
             <div class="container">
                 <h3>House of Cards</h3>
                 <p>Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
                 <div class="wrap-buttons">
-                    <button role="button" class="button">
+                    <button role="button" class="button" id="see-now">
                         <i class="fas fa-play"></i>
                         Assistir agora
                     </button>
-                    <button role="button" class="button">
+                    <button role="button" class="button" id="see-info">
                         <i class="fas fa-info-circle"></i>
                         Mais informações
                     </button>  
@@ -202,5 +219,6 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 .first-carroucel{
-    margin-top: -100px;
+    margin-top: -50px;
 }
 .carroucel-films{
     margin-bottom: 40px;
@@ -8,7 +8,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        width: 140px;
+        width: 120px;
         height: 90%;
         background: linear-gradient(270deg, black 2%, rgba(0, 0, 0, 0) 100%);
         z-index: 3;
@@ -62,4 +62,18 @@
             width: max-content;
         }
     }
+}
+
+
+@media (min-width: 768px) {
+    .first-carroucel{
+        margin-top: -100px;
+    }    
+}
+
+// Controle para telas notbook de altura de 768px
+@media screen and (max-height: 768px) and (min-width: 1366px) {
+    .first-carroucel{
+        margin-top: -50px;
+    }    
 }

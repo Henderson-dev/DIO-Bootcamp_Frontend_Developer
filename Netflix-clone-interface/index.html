@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap" rel="stylesheet"> 
     <!-- Add global styles -->
-    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/main.min.css">
     <!-- Add styles for Owl carousel -->
     <link rel="stylesheet" href="assets/style/owl/owl.carousel.min.css"> 
     <link rel="stylesheet" href="assets/style/owl/owl.theme.default.min.css"> 
@@ -22,10 +22,18 @@
         <div class="container">
             <h1 class="brand">NETFLIX</h1>
             <nav>
-                <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="nav__link hide">
+                    <a href="#">Início</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -39,7 +47,7 @@
                 <div class="video-shadow"></div>
             </div>
         
-            <div class="video-intro" data-property="{videoURL:'https://www.youtube.com/watch?v=BZAcNz7ECU0', containment:'#video-intro', useOnMobile:false, showControls:false,autoPlay:true, mute:false, loop:true, startAt:13, stopAt:56, opacity:1, addRaster:false, showYTLogo:false, quality:'hd720'}">
+            <div class="video-intro" data-property="{videoURL:'https://www.youtube.com/watch?v=BZAcNz7ECU0', containment:'#video-intro', useOnMobile:false, showControls:false, autoPlay:true, mute:true, loop:true, startAt:13, stopAt:56, opacity:1, addRaster:false, showYTLogo:false, quality:'hd720'}">
             </div>
             <!-- // Load video in background -->
 

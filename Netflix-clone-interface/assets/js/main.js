@@ -1,4 +1,5 @@
 
+// abre e feche o menu hamburguer
 const hamburger = document.querySelector('.hamburger');
 const navLink = document.querySelector('.nav__link');
 
@@ -7,7 +8,7 @@ hamburger.addEventListener('click', () => {
 });
 
 
-
+// controle do carousel
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -29,8 +30,8 @@ $('.owl-carousel').owlCarousel({
 // documentation: https://owlcarousel2.github.io/OwlCarousel2/
 
 
+// Video Background Destaque Home
 jQuery(function($){
-    // Video Background Destaque Home
     var myPlayer;
     jQuery(function(){
         var options = {

@@ -88,18 +88,30 @@ header .hamburger {
 }
 header .hamburger .line {
   display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 5px;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 7px;
   background-color: #fff;
 }
 header .nav__link {
-  position: fixed;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   top: 75px;
   left: 0;
   background-color: var(--black);
   padding: 20px 30px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+          box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
 }
 header .nav__link a {
   display: block;
@@ -107,13 +119,12 @@ header .nav__link a {
   text-align: center;
   color: #fff;
   text-decoration: none;
+  min-width: 180px;
 }
 header .nav__link a:hover {
   background-color: var(--red);
-  color: #000;
 }
-
-.hide {
+header .hide {
   display: none;
 }
 
@@ -143,7 +154,8 @@ header .nav__link a:hover {
   }
   header .nav__link a {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 5px 10px;
+    min-width: auto;
   }
   header .hamburger {
     display: none;

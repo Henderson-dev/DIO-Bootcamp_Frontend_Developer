@@ -62,8 +62,15 @@
             width: max-content;
         }
     }
+
 }
 
+
+
+// .owl-stage{
+//     transition-duration: 0ms;
+//     transform: translate3d(20px, 0px, 0px) I !important;
+// }
 
 @media (min-width: 768px) {
     .first-carroucel{
@@ -76,4 +83,12 @@
     .first-carroucel{
         margin-top: -50px;
     }    
+}
+
+
+.owl-carousel .owl-stage-outer {
+
+    transition-duration: 0ms;
+    transform: translate3d(20px, 0px, 0px);
+
 }

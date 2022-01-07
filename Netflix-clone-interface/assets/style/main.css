@@ -83,15 +83,69 @@ header .brand {
   font-size: 4rem;
 }
 header .hamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-header .hamburger .line {
   display: block;
-  width: 30px;
-  height: 3px;
-  margin-bottom: 7px;
-  background-color: #fff;
+  position: relative;
+  top: 1px;
+  right: 5px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+header .hamburger input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+header .hamburger input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(0, -1px);
+          transform: rotate(45deg) translate(0, -1px);
+}
+header .hamburger input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+header .hamburger input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, 1px);
+          transform: rotate(-45deg) translate(0, 1px);
+}
+header .hamburger input:checked ~ div {
+  -webkit-transform: none;
+          transform: none;
+}
+header .hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+header .hamburger span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+header .hamburger span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
 }
 header .nav__link {
   position: absolute;
@@ -102,16 +156,22 @@ header .nav__link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   top: 75px;
   left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--black);
   padding: 20px 30px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
           box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 header .nav__link a {
   display: block;
@@ -125,7 +185,8 @@ header .nav__link a:hover {
   background-color: var(--red);
 }
 header .hide {
-  display: none;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
 }
 
 @media (min-width: 576px) {
@@ -321,4 +382,10 @@ header .hide {
   .first-carroucel {
     margin-top: -50px;
   }
+}
+.owl-carousel .owl-stage-outer {
+  -webkit-transition-duration: 0ms;
+          transition-duration: 0ms;
+  -webkit-transform: translate3d(20px, 0px, 0px);
+          transform: translate3d(20px, 0px, 0px);
 }

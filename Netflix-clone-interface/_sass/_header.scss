@@ -71,6 +71,7 @@ header{
     } 
     .nav__link {
         position: absolute;
+        z-index: 0;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -80,11 +81,8 @@ header{
         background-color: var(--black);
         padding: 20px 30px;
         box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0);
-
-
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
         transform: translate(0, 0);
-
       a {
           display: block;
           padding: 10px 20px;
@@ -98,12 +96,7 @@ header{
       }
     }
     .hide {
-        //display: none;
-        // transform-origin: 0% 0%;
-        //transform: none;
-        
         transform: translate(-100%, 0);
-       
     }
 }
 
@@ -140,6 +133,8 @@ header{
             width: auto;
             background: none;
             padding: 0;
+            box-shadow: none;
+            transform: none;
         }
         .nav__link a {
             display: inline-block;
